@@ -1,0 +1,17 @@
+<mat-toolbar class="toolbar" [class.mat-elevation-z8]="true" color="primary">
+    <mat-toolbar-row class="justify-between">
+
+        <!-- Título -->
+        <a class="row mouse-pointer hover-div border-r-hard" href="home">
+            <mat-icon class="d-pad" aria-hidden="false">format_align_center</mat-icon>
+            <h1 class="d-pad-right">Sistema de artigos</h1>
+        </a>
+
+        <!-- Ações -->
+        <div class="row">
+            <button class="d-m-right button-outline border-r-hard" mat-stroked-button
+                *ngFor="let action of buttonOptions" (click)="executeAction(action.value)">{{action.label}}</button>
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>

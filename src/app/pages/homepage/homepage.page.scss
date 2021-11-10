@@ -1,0 +1,29 @@
+@import "../../../variables";
+
+$primary: map-get($theme, primary);
+$accent: map-get($theme, accent);
+
+.homepage-logo {
+    width: 100vw; 
+    height: 70vh;
+    background-color: mat-color($accent);
+}
+
+.homepage-logo mat-icon {
+    width: unset;
+    height: unset;
+    font-size: 35em;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 2px 1px 1px #000;
+}
+
+.homepage-logo-title-container {
+    font-size: 8em;
+    line-height: 150px;
+    color: white;
+    text-shadow: 2px 0px 1px #000;
+}
+
+h3 { font-size: 1.5em; }

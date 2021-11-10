@@ -1,0 +1,24 @@
+<!-- Logo -->
+<div class="homepage-logo d-flex justify-evenly align-center" [class.mat-elevation-z2]="true">
+    <mat-icon class="d-pad hover-div mouse-pointer" aria-hidden="false" (click)="onClickLogo()">
+        format_align_center
+    </mat-icon>
+    <div class="d-flex column homepage-logo-title-container">
+        <b>Sis</b>
+        <b>Tema</b>
+        <b>De</b>
+        <b>Artigos</b>
+    </div>
+</div>
+
+<!-- Recomendações -->
+<div class="d-pad">
+    <h3><b>Recomendado para você:</b></h3>
+    <app-artigos-row #recomendacoesRow class="full-width"></app-artigos-row>
+</div>
+
+<!-- Destaques -->
+<div class="d-pad">
+    <h3><b>Top artigos do mês:</b></h3>
+    <app-artigos-row #destaquesRow class="full-width"></app-artigos-row>
+</div>
